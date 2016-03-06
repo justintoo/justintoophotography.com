@@ -104,21 +104,21 @@ function MM_swapImage() { //v3.0
                 <!-- Set the first background image using inline CSS below. -->
                 <div class="fill" style="background-image:url('images/Coffield-9504-Sample.jpg');"></div>
                 <div class="carousel-caption">
-                  <h2>Caption 1</h2>
+                  <h2></h2>
                 </div>
             </div>
             <div class="item">
                 <!-- Set the second background image using inline CSS below. -->
                 <div class="fill" style="background-image:url('images/mariko-9767.jpg');"></div>
                 <div class="carousel-caption">
-                  <h2>Caption 2</h2>
+                  <h2></h2>
                 </div>
             </div>
             <div class="item">
                 <!-- Set the third background image using inline CSS below. -->
                 <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
                 <div class="carousel-caption">
-                    <h2>Caption 3</h2>
+                    <h2></h2>
                 </div>
             </div>
         </div>
@@ -164,12 +164,25 @@ function MM_swapImage() { //v3.0
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
+    <script src="js/jquery.mobile.custom.min.js"></script>
+
     <!-- Script to Activate the Carousel -->
     <script>
     $('.carousel').carousel({
         interval: 5000 //changes the speed
     })
     </script>
+
+    <script>
+	  $(document).ready(function() {
+			 $("#myCarousel").swiperight(function() {
+				  $(this).carousel('prev');
+					});
+			   $("#myCarousel").swipeleft(function() {
+				  $(this).carousel('next');
+		   });
+		});
+	</script>
 
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
