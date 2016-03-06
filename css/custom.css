@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* line height is 20px by default so add 30px top and bottom to equal the new .navbar-brand 80px height  */
+.navbar-brand {
+  padding: 0px;
+  height: 60px;
+}
+
+.navbar-brand>img {
+  height: 100%;
+  padding: 15px;
+  width: auto;
+}
+
+.nav >li >a {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.navbar-toggle {
+  padding: 10px;
+  margin: 25px 15px 25px 0;
+}
+
+/* Navbar Logo Brand - Center with Flexbox and Text*/
+.brand-centered {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.brand-centered .navbar-brand {
+  display: flex;
+  align-items: center;
+}
