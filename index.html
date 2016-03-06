@@ -81,7 +81,7 @@ function MM_swapImage() { //v3.0
                         <a class="page-scroll" href="#services">Services</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="#contact" onclick="toggleChat()">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -259,6 +259,10 @@ function MM_swapImage() { //v3.0
 			s1.setAttribute('crossorigin','*');
 			s0.parentNode.insertBefore(s1,s0);
 		})();
+
+		function toggleChat() {
+			Tawk_API.toggle(); return false;
+		}
     </script>
     <!--End of Tawk.to Script-->
 </body>
