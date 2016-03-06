@@ -5,6 +5,18 @@
 	padding-top: 60px;
 }
 
+@media(min-width:767px) {
+    .navbar {
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+
 /* line height is 20px by default so add 30px top and bottom to equal the new .navbar-brand 80px height  */
 .navbar-brand {
   padding: 0px;

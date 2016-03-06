@@ -16,6 +16,7 @@
 
     <!-- Custom CSS -->
     <link href="css/full-slider.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/scrolling-nav.css">    
     <link rel="stylesheet" type="text/css" href="css/custom.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -50,7 +51,7 @@ function MM_swapImage() { //v3.0
 </script>
 </head>
 
-<body onLoad="MM_preloadImages('images/logo-justin_too-v20160305-default.png')">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" onLoad="MM_preloadImages('images/logo-justin_too-v20160305-default.png')">
 
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -74,13 +75,13 @@ function MM_swapImage() { //v3.0
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="http://justintoo.com">Home</a>
+                        <a class="page-scroll" href="#page-top">Home</a>
                     </li>
                     <li>
-                        <a href="http://services.justintoo.com">Services</a>
+                        <a class="page-scroll" href="#services">Services</a>
                     </li>
                     <li>
-                        <a href="contact.justintoo.com">Contact</a>
+                        <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -135,15 +136,16 @@ function MM_swapImage() { //v3.0
 
     <!-- Page Content -->
     <div class="container">
-
-        <div class="row">
-            <div class="col-lg-12">
-                <h1>Full Slider by Start Bootstrap</h1>
-                <p>The background images for the slider are set directly in the HTML using inline CSS. The rest of the styles for this template are contained within the <code>full-slider.css</code>file.</p>
+		<div id="services" class="services-section">
+            <div class="row">
+                <div class="col-lg-12">
+                  <h1>Photography Services</h1>
+                  <p>We are delighted to capture your story –</p>
+                </div>
             </div>
+    
+            <hr>
         </div>
-
-        <hr>
 
         <!-- Footer -->
         <footer>
@@ -163,8 +165,11 @@ function MM_swapImage() { //v3.0
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
     <script src="js/jquery.mobile.custom.min.js"></script>
+    
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+
 
     <!-- Script to Activate the Carousel -->
     <script>
